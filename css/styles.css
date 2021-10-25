@@ -85,7 +85,6 @@ footer {
 }
 .header-nav {
   display: flex;
-  /* align-items: baseline; */
 
   max-width: 1600px;
   margin-left: auto;
@@ -93,15 +92,20 @@ footer {
 }
 .header-icon {
   margin-right: 10px;
+  /* fill: var(--primary--text--color); */
 }
 .header-nav-link:not(:last-child) {
   margin-right: 50px;
 }
 
+.link-icon {
+  display: flex;
+  align-items: center;
+}
 .header-nav-link:focus,
 .header-nav-link:hover {
   color: var(--accent--color);
-  stroke: var(--accent--color);
+  fill: var(--accent--color);
 }
 
 .header-contact {
@@ -141,38 +145,6 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-/* .mail {
-  display: flex;
-  align-items: center;
-}
-.mail::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-
-  background-image: url(../images/envelope.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-.telepfon {
-  display: flex;
-  align-items: center;
-}
-.telepfon::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-
-  background-image: url(../images/smartphone.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-} */
 
 .header-contact a:hover,
 .header-contact a:focus {
@@ -203,11 +175,6 @@ footer {
   background-position: center;
   background-size: cover;
 }
-/* .hero-conteiner {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-} */
 
 .hero-title {
   color: var(--text--color--white);
@@ -328,7 +295,43 @@ footer {
 .team .profesion {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.social-item:last-child {
+  margin-right: 0;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main--backgraundcolor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--primary--text--color);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent--color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--main--backgraundcolor);
+}
+
 /* Секция клиенты */
 .clients {
   display: flex;
